@@ -13,7 +13,6 @@ import { Item } from './interfaces/item.interface';
 
 @Controller('items')
 export class ItemsController {
-
   constructor(private readonly itemsService: ItemsService) {}
 
   @Get()
@@ -22,8 +21,8 @@ export class ItemsController {
   }
 
   @Get(':id')
-  findOne(@Param() param): string {
-    return `Item ${param.id}`;
+  findOne(@Param() param): Item {
+    return this.itemsService.findOne(param.id);
   }
 
   @Post()
@@ -38,6 +37,6 @@ export class ItemsController {
 
   @Put(':id')
   update(@Body() updateItemDto: CreateItemDto, @Param() param): string {
-    return `Update ${param.id} - Name ${updateItemDto.name}`
+    return `Update ${param.id} - Name ${updateItemDto.name}`;
   }
 }
