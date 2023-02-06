@@ -3,7 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ItemsModule } from './items/items.module';
-import { GatewayModule } from './gateway/gateway/gateway.module';
+import { GatewayModule } from './gateway/gateway.module';
 import config from './config/keys'
 
 @Module({
