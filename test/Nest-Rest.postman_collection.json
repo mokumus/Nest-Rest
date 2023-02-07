@@ -12,12 +12,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/items",
+					"raw": "localhost:3000/api/items",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"api",
 						"items"
 					]
 				}
@@ -30,12 +31,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/items/63e0b183c42cd98ed14e43c4",
+					"raw": "localhost:3000/api/items/63e0b183c42cd98ed14e43c4",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"api",
 						"items",
 						"63e0b183c42cd98ed14e43c4"
 					]
@@ -49,12 +51,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/items/63e0b183c42cd98ed14e43c4",
+					"raw": "localhost:3000/api/items/63e0b183c42cd98ed14e43c4",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"api",
 						"items",
 						"63e0b183c42cd98ed14e43c4"
 					]
@@ -78,12 +81,13 @@
 					"raw": "{\r\n    \"name\": \"Item Three\",\r\n    \"description\": \"This is item 2\",\r\n    \"qty\": 12\r\n}"
 				},
 				"url": {
-					"raw": "localhost:3000/items",
+					"raw": "localhost:3000/api/items",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"api",
 						"items"
 					]
 				}
@@ -106,12 +110,13 @@
 					"raw": "{\r\n    \"name\": \"Item One\",\r\n    \"description\": \"This is item 1\",\r\n    \"qty\": 13\r\n}"
 				},
 				"url": {
-					"raw": "localhost:3000/items/63e0b166c42cd98ed14e43c2",
+					"raw": "localhost:3000/api/items/63e0b166c42cd98ed14e43c2",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"api",
 						"items",
 						"63e0b166c42cd98ed14e43c2"
 					]
