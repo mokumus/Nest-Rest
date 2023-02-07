@@ -4,10 +4,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ItemsModule } from './items/items.module';
 import { GatewayModule } from './gateway/gateway.module';
+import { AuthModule } from './auth/auth.module';
 import config from './config/keys'
 
 @Module({
-  imports: [ItemsModule, MongooseModule.forRoot(config.mongoURI), GatewayModule],
+  imports: [ItemsModule, MongooseModule.forRoot(config.mongoURI), GatewayModule, AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
